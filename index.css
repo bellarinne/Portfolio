@@ -139,9 +139,10 @@ hr {
 
 @media (max-width: 640px) {
     .container {
-        padding: 32px;
+        padding: 20px;
         height: auto;
-        margin: 32px 0; 
+        margin: 24px 0; 
+        width: calc(100% - 48px);
     }
 
     .work-contact-experience {
