@@ -1,5 +1,12 @@
 /* Global Style*/
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .instrument-serif-regular {
     font-family: "Instrument Serif", serif;
     font-weight: 400;
@@ -17,11 +24,11 @@ h1{
 }
 
 .highlight-under-construction{
-    font-family: "Space Mono", monospace
+    font-family: "Space Mono", monospace;
     max-width: 100%;
     white-space: nowrap;
     word-spacing: normal;
-    color: #7290b3
+    color: #7290b3;
 }
 
 .highlight-red{
@@ -82,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 578px; 
-    width: calc(100% - 64px);
+    width: 100%;
     padding-top: 24px;
     padding-right: 24px;
     padding-left: 24px;
@@ -91,6 +98,7 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
     align-self: center;
+    overflow: hidden;
 }
 
 
@@ -142,7 +150,11 @@ hr {
         padding: 20px;
         height: auto;
         margin: 24px 0; 
-        width: calc(100% - 48px);
+        width: 100%;
+        max-width: fit-content;
+        box-sizing: border-box;
+        margin-left: 24px;
+    margin-right: 24px;
     }
 
     .work-contact-experience {
